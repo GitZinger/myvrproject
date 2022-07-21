@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{B0A33980-D993-E5BF-18B1-EEBC8F4199BA}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hand.cs">
+    <Files>
+      <File FileName="Assets/Hand.cs" Line="54" Column="21" />
+      <File FileName="Assets/Avatar.cs" Line="46" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="QuestApp" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Hand.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cb5c3456-d139-4359-9030-b9fb7b6a296f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
