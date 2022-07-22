@@ -43,13 +43,25 @@ public class Avatar : MonoBehaviour
     {
         float ls = leftHand.getSpeedControl();
         float rs = rightHand.getSpeedControl();
+        float lr = leftHand.getSpeedControl2();
 
+        if (Mathf.Abs(ls) > Mathf.Abs(lr))
+        {
 
+            float s = Mathf.Clamp(ls + rs, -1, 1);
+            Vector3 intendedMotion = s * head.forward * Time.deltaTime;
+            intendedMotion.y = 0;
+            myavatar.Translate(intendedMotion, Space.World);//move the body
+        }
+        else
+        {
+            float s = Mathf.Clamp(lr, -1, 1);
+            Vector3 intendedMotion = s * transform.right * Time.deltaTime;
+            intendedMotion.y = 0;
+            myavatar.Translate(intendedMotion, Space.World);//move the body
+        }
 
-        float s = Mathf.Clamp(ls + rs, -1, 1);
-        Vector3 intendedMotion = s * head.forward * Time.deltaTime;
-        intendedMotion.y = 0;
-        myavatar.Translate(intendedMotion, Space.World);//move the body
+       
 
 
     }
